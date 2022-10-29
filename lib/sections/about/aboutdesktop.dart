@@ -6,9 +6,7 @@ import 'package:myportfolio/configs/space.dart';
 import 'package:myportfolio/constants.dart';
 import 'package:myportfolio/utils/about_utils.dart';
 import 'package:myportfolio/utils/utils.dart';
-import 'package:myportfolio/utils/work_utils.dart';
 import 'package:myportfolio/widgets/about_me_data.dart';
-import 'package:myportfolio/widgets/community_button.dart';
 import 'package:myportfolio/widgets/custom_text_heading.dart';
 import 'package:myportfolio/widgets/tech_widget.dart';
 import 'package:universal_html/html.dart' as html;
@@ -147,16 +145,16 @@ class AboutDesktop extends StatelessWidget {
                             width: AppDimensions.normalize(30),
                             height: AppDimensions.normalize(0.5),
                           ),
-                          ...WorkUtils.logos.asMap().entries.map(
-                                (e) => Expanded(
-                                  child: CommunityIconBtn(
-                                    icon: e.value,
-                                    link: WorkUtils.communityLinks[e.key],
-                                    height:
-                                        WorkUtils.communityLogoHeight[e.key],
-                                  ),
-                                ),
-                              )
+                          // ...WorkUtils.logos.asMap().entries.map(
+                          //       (e) => Expanded(
+                          //         child: CommunityIconBtn(
+                          //           icon: e.value,
+                          //           link: WorkUtils.communityLinks[e.key],
+                          //           height:
+                          //               WorkUtils.communityLogoHeight[e.key],
+                          //         ),
+                          //       ),
+                          //     )
                         ],
                       ),
                     ],

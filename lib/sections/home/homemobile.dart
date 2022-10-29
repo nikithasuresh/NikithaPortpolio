@@ -61,7 +61,7 @@ class HomeMobile extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Shetty",
+                  "S",
                   style: AppText.h3b!.copyWith(
                     height: 1,
                   ),
